@@ -1,7 +1,7 @@
 databases:
   - name: mysitedb
     plan: free
-    databaseName: mysite
+    databaseName: greenplus
     user: mysite
 
 services:
