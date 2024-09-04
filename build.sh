@@ -2,6 +2,7 @@
 # Exit on error
 set -o errexit
 
+sudo apt-get install unixodbc-dev
 pip install -r requirements.txt
 
 # Convert static asset files
