@@ -78,9 +78,18 @@ WSGI_APPLICATION = 'GreenPlus.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+            'ENGINE': 'mssql',
+            'NAME': 'Green Plus',
+            'USER': 'greenplusadmin',
+            'PASSWORD': '554HLLST@',
+            'HOST': 'green-plus-server.database.windows.net',
+            'PORT': '1433',
+
+            'OPTIONS': {
+                'driver': 'ODBC Driver 17 for SQL Server',
+                'connection_retries': 2,
+            },
+        },
 }
 
 
