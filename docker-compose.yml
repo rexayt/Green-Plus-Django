@@ -1,9 +1,0 @@
-version: '3.8'
-
-service:
-
-  django:
-    container_name: django
-    build:
-      context: ./GreenPlus
-    command: python manage.py runserver 0.0.0.0:8000
