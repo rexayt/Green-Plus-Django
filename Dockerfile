@@ -21,6 +21,6 @@ RUN pip install -r requirements.txt
 
 RUN apt-get -y clean
 
-COPY . .
+COPY . /app
 
 CMD [ "gunicorn", "core.wsgi"]
