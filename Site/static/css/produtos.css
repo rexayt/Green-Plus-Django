@@ -1,0 +1,131 @@
+.cadastroProduto{
+    font-size: 0.5em;
+}
+
+.row-form {
+    overflow: hidden;
+    display: block;
+    max-height: 1200px;
+    border: solid 1px rgb(215, 215, 215);
+    border-radius: 10px;
+    box-shadow: 2px 5px rgb(224, 224, 224);
+    margin-bottom: 30px;
+}
+
+.labelGrandao {
+    font-size: 1em;
+    padding-top: 1vh;
+    display: block;
+    font-weight: 350;
+}
+
+.coluna {
+    float: left;
+    overflow: hidden;
+    margin: 30px;
+}
+
+.coluna img {
+    height: 220px;
+    width: 220px;
+    border-radius: 10px;
+    border: solid 1px rgb(237, 237, 237);
+    box-shadow: 5px 5px rgb(224, 224, 224);
+}
+
+
+.coluna-interna {
+    float: left;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.coluna-interna .detalhes-gerais {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.coluna-interna .coluna-da-linha input[name="nome-popular"],.coluna-interna .coluna-da-linha input[name="nome-cientifico"] {
+    width: 450px;
+}
+
+.coluna-da-linha {
+    float: left;
+    margin: 8px 35px 8px 0 ;
+}
+
+
+.linha {
+    height:100px;
+}
+
+.labelFoda {
+    display: block;
+    font-size: 25px;
+}
+
+.coluna-da-linha input[type=radio]{
+    width: 30px;
+    height: 22px;
+    margin: 10px 0px 0 0;
+
+}
+
+.coluna-da-linha input,.coluna-da-linha select {
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.coluna input, .coluna select {
+    width: 240px; 
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.coluna-da-linha .span-radio{
+    margin: 0px 100px 0 0;
+    font-size: 25px;
+}
+
+.row-form .requisitos-de-cultivo {
+    display: block;
+    font-size: 35px;
+    margin: 20px 0 -20px 30px;
+    font-weight: 300;
+}
+
+.row-form-buttons {
+    display: block;
+    max-height: 1200px;
+    width: 100%;
+}
+
+.row-form-buttons button {
+    float: right;
+    margin: 0 0 0 10px;
+    height: 70px;
+    width: 70px;
+    align-items: center;
+    border: 0;
+    border-radius: 12px;
+}
+
+.row-form-buttons button:nth-child(1){
+    background-color: green;
+}
+.row-form-buttons button:nth-child(2){
+    background-color: red;
+}
+.row-form-buttons button:nth-child(3){
+    background-color: orange;
+}
+
+
+.row-form-buttons button img{
+    width: 40px;
+    height: 40px;
+    margin-top: -10px;
+}

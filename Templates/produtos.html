@@ -1,0 +1,83 @@
+{% extends "home.html" %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/produtos.css'%}">
+    <title>Produtos</title>
+    
+{% endblock %}
+{% block body %}
+<p class="labelGrandao">Cadastro de <b>Produtos</b></p>
+    <div class="varios-forms">
+        <form action="" id="" class="cadastroProduto">
+            <div class="row-form">
+                <div class="coluna">
+                    <img src="{% static 'images/alface.jpeg' %}" alt="">
+                </div>
+                <div class="coluna-interna">
+                    <span class="detalhes-gerais">Detalhes gerais</span>
+                    <div class="linha">
+                        <div class="coluna-da-linha">
+                            <span class="labelFoda">Nome Popular</span>
+                            <input type="text" name="nome-popular">
+                        </div>
+                        <div class="coluna-da-linha">
+                            <span class="labelFoda">Categoria</span>
+                            <input type="radio" name="categoria" id="categoria1" value=0>
+                            <span class="span-radio">Venda</span>
+                            <input type="radio" name="categoria" id="categoria2" value=1>
+                            <span class="span-radio">Uso Interno</span>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="coluna-da-linha">
+                            <span class="labelFoda">Nome Científico</span>
+                            <input type="text" name="nome-cientifico">
+                        </div>
+                        <div class="coluna-da-linha">
+                            <span class="labelFoda">Classificação</span>
+                            <select name="classificacao"></select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-form">
+                <span class="requisitos-de-cultivo"><b>Requisitos</b> de <b>Cultivo</b></span>
+                <div class="linha">
+                    <div class="coluna">
+                        <span class="labelFoda">Tempo de plantio</span>
+                        <input type="text" name="tempo-de-plantio">
+                    </div>
+                    <div class="coluna">
+                        <span class="labelFoda">Temperatura</span>
+                        <input type="text" name="temperatura">
+                    </div>
+                    <div class="coluna">
+                        <span class="labelFoda">Irrigação</span>
+                        <input type="text" name="irrigacao">
+                    </div>
+                    <div class="coluna">
+                        <span class="labelFoda">Valor de venda (R$)</span>
+                        <input type="text" name="valor-de-venda">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="row-form-buttons">
+            <button><img src="{%static 'images/enviar.png' %}" alt=""></button>
+            <button><img src="{%static 'images/excluir.png' %}" alt=""></button>
+            <button><img src="{%static 'images/pesquisar.png' %}" alt=""></button>
+        </div>
+    </div>
+        
+
+{% endblock %}
+{% block ativo %}
+    <script>
+        let ativo = document.getElementById('produtos')
+    </script>
+    <script>
+        let imagem = ativo.querySelector('img');
+        imagem.src = "{% static 'images/produtoBranco.png' %}"
+        ativo.style.backgroundColor = 'rgb(3, 143, 3)'
+    </script>
+{% endblock %}

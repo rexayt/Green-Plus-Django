@@ -1,0 +1,70 @@
+.loginDiv {
+    width: 540px;
+    height: 480px;
+    margin: auto;
+    text-align: center;
+    margin-top: 32vh;
+    border-radius: 20px;
+    box-shadow: 1px 1px rgb(51, 51, 51);
+    background-color: white;
+}
+
+input {
+    margin: auto;
+    height: 40px;
+    width: 400px;
+    margin-bottom: 20px;
+    margin-top: -1px;
+    display: block;
+    border-radius: 30px;
+    border: solid 1px rgb(158, 157, 157);
+    background-color: rgb(245, 245, 245);
+    text-align: justify;
+    font-size: 16px;
+    text-indent: 1vw;
+}
+
+p {
+    margin: auto;
+    padding-top: 50px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+button {
+    display:block;
+    margin: auto;
+    margin-top: 55px;
+    padding: 10px 120px;
+    border-radius: 30px;
+    background-color: rgb(214, 92, 44);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: solid 1px rgb(158, 157, 157);
+    transition: transform 0.2s ease;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.90)
+}
+
+label {
+    display: block;
+    margin-right: 330px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(61,140,0,1) 0%, rgba(0,180,10,1) 50%, rgba(0,255,49,1) 100%);
+    background-image: url('../images/fundoLogin.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center top;
+    background-attachment: fixed;
+}

@@ -1,0 +1,131 @@
+body {
+    background-color: #e6e6e6;
+}
+
+html {
+    font-size: 2vw;
+}
+
+.conteudo {
+    float: left;
+    margin: 0 0 0 2vw;
+}
+.logo {
+    width: 50%;
+}
+
+.links {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    height:85vh;
+}
+
+.links hr {
+    margin: auto;
+    margin-top: 15px;
+}
+
+.navegacao {
+    float: left;
+    height: 100vh;
+    align-items: center;
+    background-color: white;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+    width: 100px;
+    box-shadow: 2px 3px rgb(189, 189, 189);
+}
+
+
+.navegacao .linkImages{
+    width: 40px;
+    height: 40px;
+}
+
+.navegacao .links a {
+    display: block;
+    margin: 10px auto;
+    height: 70px;
+    width: 70px;
+    border-radius: 20px;
+}
+
+.navegacao .links a:hover {
+    background-color: rgb(3, 143, 3);
+}
+
+div .saudacaoUsuario {
+    float: left;
+    color: white;
+    margin: 1.5vh;
+    width: 50vw;
+    height: 9vh;
+    background: linear-gradient(90deg, rgba(55,125,1,1) 0%, rgba(83,157,87,1) 50%, rgb(122, 194, 135) 100%);;
+    border-radius: 20px;
+}
+
+.saudacaoUsuario .textoSaudacao {
+    font-size: 0.78em;
+    margin: 0.8vh 0 -0.30vh 1.4vw;
+    padding-top: 0.15vh;
+}
+
+.saudacaoUsuario .subtextoSaudacao {
+    margin: 0 0 0 1.51vw;
+    font-size: 1.2vh;
+}
+
+div .notificacoes {
+    float: left;
+    height: 9vh;
+    border: solid 2px;
+    width: 17vw;
+    margin: 1.5vh 0 0;
+    border-radius: 20px;
+    background-color: rgb(247, 247, 247);
+}
+
+div .notificacoes .imagemNotificacao {
+    margin: 0.26em 0px 0px 0.4em;
+    float: left;
+}
+
+div .notificacoes img {
+    height: 5.5vh;
+    width: 3vw;
+}
+
+div .notificacoes p:nth-child(1) {
+    margin: 0.8em 0 0 5.4em;
+    font-size: 0.4em;
+}
+
+div .notificacoes p:nth-child(2) {
+    margin-left: 3.3em;
+    font-size: 0.7em;
+}
+
+.interagiveis{
+    height: 25vh;
+    align-items: center;
+    text-align: center;
+}
+
+.interagiveis hr {
+    margin-bottom: 15px;
+}
+
+.interagiveis a{
+    padding-top: -50px;
+    display: block;
+    margin: auto;
+}
+
+.interagiveis img {
+    height: 50px;
+    width: 50px;
+}
+
