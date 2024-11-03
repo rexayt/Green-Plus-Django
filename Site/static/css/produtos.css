@@ -47,6 +47,7 @@
 
 .coluna-interna .coluna-da-linha input[name="nome-popular"],.coluna-interna .coluna-da-linha input[name="nome-cientifico"] {
     width: 450px;
+    border: solid 1px grey;
 }
 
 .coluna-da-linha {
@@ -76,6 +77,7 @@
     height: 40px;
     border-radius: 10px;
     background-color: white;
+    border: solid 1px grey;
 }
 
 .coluna input, .coluna select {
@@ -83,6 +85,7 @@
     height: 40px;
     border-radius: 10px;
     background-color: white;
+    border: solid 1px grey;
 }
 
 .coluna-da-linha .span-radio{

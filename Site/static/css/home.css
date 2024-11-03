@@ -11,7 +11,9 @@ html {
     margin: 0 0 0 2vw;
 }
 .logo {
-    width: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
 }
 
 .links {
@@ -19,7 +21,7 @@ html {
     align-items: center;
     text-align: center;
     width: 100px;
-    height:85vh;
+    height:80vh;
 }
 
 .links hr {
@@ -48,7 +50,7 @@ html {
 .navegacao .links a {
     display: block;
     margin: 10px auto;
-    height: 70px;
+    height: 60px;
     width: 70px;
     border-radius: 20px;
 }
@@ -109,23 +111,23 @@ div .notificacoes p:nth-child(2) {
 }
 
 .interagiveis{
-    height: 25vh;
+    height: 30vh;
+    width: 100px;
     align-items: center;
     text-align: center;
+    margin: auto;
 }
 
 .interagiveis hr {
     margin-bottom: 15px;
 }
 
-.interagiveis a{
-    padding-top: -50px;
-    display: block;
-    margin: auto;
-}
-
 .interagiveis img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
+.interagiveis a {
+    height: 70px;
+    width: 60px;
+}
