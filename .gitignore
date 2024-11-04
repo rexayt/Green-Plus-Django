@@ -1,3 +1,2 @@
 .env
-_pycache_/
-Site/_pycache_/
+__pycache__
