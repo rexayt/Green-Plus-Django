@@ -3,12 +3,13 @@
 {% block head %}
     <link rel="stylesheet" href="{% static 'css/produtos.css'%}">
     <title>Produtos</title>
-    
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
 {% endblock %}
 {% block body %}
 <p class="labelGrandao">Cadastro de <b>Produtos</b></p>
     <div class="varios-forms">
-        <form action="" id="" class="cadastroProduto">
+        <form action="" id="cadastro-produto" class="cadastroProduto">
             <div class="row-form">
                 <div class="coluna">
                     <img src="{% static 'images/alface.jpeg' %}" alt="">
@@ -19,12 +20,13 @@
                         <div class="coluna-da-linha">
                             <span class="labelFoda">Nome Popular</span>
                             <input type="text" name="nome-popular">
+                            <ul id="sugestoes-nome-popular"></ul>
                         </div>
                         <div class="coluna-da-linha">
                             <span class="labelFoda">Categoria</span>
-                            <input type="radio" name="categoria" id="categoria1" value=0>
+                            <input type="radio" name="categoria" id="categoria1" value=1 checked="true">
                             <span class="span-radio">Venda</span>
-                            <input type="radio" name="categoria" id="categoria2" value=1>
+                            <input type="radio" name="categoria" id="categoria2" value=0>
                             <span class="span-radio">Uso Interno</span>
                         </div>
                     </div>
@@ -35,7 +37,12 @@
                         </div>
                         <div class="coluna-da-linha">
                             <span class="labelFoda">Classificação</span>
-                            <select name="classificacao"></select>
+                            <select name="classificacao">
+                                <option value="">----</option>
+                                <option value="Tuberosa">Tuberosa</option>
+                                <option value="Herbácea">Herbácea</option>
+                                <option value="Fruto">Fruto</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -45,28 +52,63 @@
                 <div class="linha">
                     <div class="coluna">
                         <span class="labelFoda">Tempo de plantio</span>
-                        <input type="text" name="tempo-de-plantio">
+                        <input type="number" name="tempo-estimado">
                     </div>
                     <div class="coluna">
                         <span class="labelFoda">Temperatura</span>
-                        <input type="text" name="temperatura">
+                        <input type="number" name="temperatura">
                     </div>
                     <div class="coluna">
                         <span class="labelFoda">Irrigação</span>
-                        <input type="text" name="irrigacao">
+                        <select name="irrigacao" id="irrigacaoSelect">
+                            <option value="">----</option>
+                        </select>
                     </div>
                     <div class="coluna">
                         <span class="labelFoda">Valor de venda (R$)</span>
-                        <input type="text" name="valor-de-venda">
+                        <input type="number" name="valor-venda">
                     </div>
                 </div>
             </div>
         </form>
-        <div class="row-form-buttons">
-            <button><img src="{%static 'images/enviar.png' %}" alt=""></button>
-            <button><img src="{%static 'images/excluir.png' %}" alt=""></button>
-            <button><img src="{%static 'images/pesquisar.png' %}" alt=""></button>
-        </div>
+        <form action="" id="cadastro-produto-interno" class="cadastroProduto">
+            <div class="row-form">
+                <div class="coluna">
+                    <img src="{% static 'images/pá.jpeg' %}" alt="">
+                </div>
+                <div class="coluna-interna">
+                    <span class="detalhes-gerais">Detalhes gerais</span>
+                    <div class="linha">
+                        <div class="coluna-da-linha">
+                            <span class="labelFoda">Nome</span>
+                            <input type="text" name="nome">
+                            <ul id="sugestoes-nome"></ul>
+                        </div>
+                        <div class="coluna-da-linha">
+                            <span class="labelFoda">Categoria</span>
+                            <input type="radio" name="categoria" id="categoria1" value=1>
+                            <span class="span-radio">Venda</span>
+                            <input type="radio" name="categoria" id="categoria2" value=0 checked="true">
+                            <span class="span-radio">Uso Interno</span>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="coluna-da-linha">
+                            <span class="labelFoda">Descrição</span>
+                            <input type="text" name="Descricao">
+                        </div>
+                        <div class="coluna-da-linha">
+                            <span class="labelFoda">Estado de Conservação</span>
+                            <input type="text" name="estado-de-conservacao">
+                        </div>
+                    </div>
+                </div>
+            </form>
+    </div>
+    <div class="row-form-buttons">
+        <button id="botao-enviar"><img src="{%static 'images/enviar.png' %}" alt=""></button>
+        <button id="botao-excluir"><img src="{%static 'images/excluir.png' %}" alt=""></button>
+        <button id="botao-pesquisar"><img src="{%static 'images/pesquisar.png' %}" alt=""></button>
     </div>
         
 
@@ -80,4 +122,5 @@
         imagem.src = "{% static 'images/produtoBranco.png' %}"
         ativo.style.backgroundColor = 'rgb(3, 143, 3)'
     </script>
+    <script src="{% static 'js/produtos.js' %}"></script>
 {% endblock %}

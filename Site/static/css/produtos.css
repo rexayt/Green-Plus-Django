@@ -1,7 +1,9 @@
 .cadastroProduto{
     font-size: 0.5em;
 }
-
+*{
+    outline: none;
+}
 .row-form {
     overflow: hidden;
     display: block;
@@ -45,10 +47,11 @@
     font-weight: 600;
 }
 
-.coluna-interna .coluna-da-linha input[name="nome-popular"],.coluna-interna .coluna-da-linha input[name="nome-cientifico"] {
+.coluna-interna .coluna-da-linha input[name="nome-popular"],.coluna-interna .coluna-da-linha input[name="nome-cientifico"], select[name="classificacao"] {
     width: 450px;
     border: solid 1px grey;
 }
+
 
 .coluna-da-linha {
     float: left;
@@ -119,11 +122,23 @@
 .row-form-buttons button:nth-child(1){
     background-color: green;
 }
+
+.row-form-buttons button:nth-child(1):hover{
+    background-color: rgb(0, 151, 0);
+}
+
 .row-form-buttons button:nth-child(2){
     background-color: red;
 }
+.row-form-buttons button:nth-child(2):hover{
+    background-color: rgb(254, 125, 125);
+}
+
 .row-form-buttons button:nth-child(3){
     background-color: orange;
+}
+.row-form-buttons button:nth-child(3):hover{
+    background-color: rgb(253, 182, 50);
 }
 
 
@@ -131,4 +146,58 @@
     width: 40px;
     height: 40px;
     margin-top: -10px;
+}
+
+input, select {
+    text-indent: 3px;
+}
+
+#cadastro-produto-interno {
+    display: none;
+}
+
+button:active {
+    transform: scale(0.90);
+    transition: 0.1s;
+}
+
+#cadastro-produto-interno input[type=text], #cadastro-produto-interno select {
+    width: 450px;
+    border: solid 1px grey;
+}
+
+#sugestoes-nome-popular, #sugestoes-nome{
+    display: none;
+    position: fixed;
+    width: 450px;
+    list-style: none;
+    text-align: left;
+    align-items: left;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 0 0 5px 0;
+    border: solid 1px grey;
+    border-radius: 0 0 0 10px;
+}
+
+#sugestoes-nome-popular li, #sugestoes-nome li {
+    text-align: left;
+    align-items: left;
+    border-bottom: solid 1px grey;
+    height: 40px;
+    font-size: 1em;
+    padding: 2px 0 5px 5px;
+    border: solid 1px grey;
+}
+#sugestoes-nome-popular li:last-child(), #sugestoes-nome li:last-child(){
+    border-radius: 0 0 0 10px;
+    
+}
+
+#sugestoes-nome-popular li:hover, #sugestoes-nome li:hover {
+    background-color: rgb(238, 238, 238);
+    
+    cursor: pointer;
 }
